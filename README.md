@@ -59,8 +59,8 @@ print(parsed_msg.content.to_markdown())
 
 ## Resources
 Recommended resources to understand:
-*[Pandas docs](https://pandas.pydata.org/docs/)
-*[AISHub API](http://www.aishub.net/api)
+* [Pandas docs](https://pandas.pydata.org/docs/)
+* [AISHub API](http://www.aishub.net/api)
 
 ## Contact
 email: ferdi.stoeltie@lagersmit.com
