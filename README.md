@@ -1,15 +1,20 @@
 # aishub_api
-Retrieves AISrecords from aishub and can store the result in a pandas dataframe.
-All compression methods (none, zip, gzip, bzip2) are supported.
-Also xml, json and csv output is supported. The aishub_api.parse_message function can convert any valid api message into a header plus dataframe.
+Retrieves AISrecords from [AISHub](http://www.aishub.net/) and can store the result in a pandas dataframe.
+All compression methods as stated in the [AISHub API](http://www.aishub.net/api) (none, zip, gzip, bzip2) are supported.
+Also xml, json and csv output is supported. The aishub_api.parse_message function can convert any valid api response message into a AISHubMessage object containing header information and the records retrieved.
 
 ## About
-Python script to retrieve records using the AISHub API.
+Python script to retrieve records from AISHub using the AISHub API.
 
 ## Prerequisites
 Software: Python 3.8.5+
 
-Modules: Pandas, requests
+**Modules required:** 
+
+* [Pandas](https://pandas.pydata.org/docs/) (pip install pandas)
+* [Requests](https://requests.readthedocs.io/en/master/api/) (pip install requests)
+                  
+                    
 
 ## Usage
 ### Example I
@@ -50,7 +55,12 @@ print(parsed_msg.content.to_markdown())
 |  4 | 244700554 | 2020-08-17 12:38:19 GMT |     4.40764 |    51.2288 | 360   |     0 |       511 |   128 |         5 |       0 | MALECON             | PB7981     |     37 |  14 |   6 |   3 |   3 |      16   | WILLEMDOK ANTW | 08-16 16:30 |
 
 ## License
-Distributed under the GNU GPLv3 License. See LICENSE for more information.
+*Distributed under the GNU GPLv3 License. See LICENSE for more information.*
+
+## Resources
+Recommended resources to understand:
+*[Pandas docs](https://pandas.pydata.org/docs/)
+*[AISHub API](http://www.aishub.net/api)
 
 ## Contact
 email: ferdi.stoeltie@lagersmit.com
