@@ -18,7 +18,7 @@ Software: Python 3.8.5+
 
 ## Usage
 ### Example I
-```
+```Python
 import aishub_api
 
 aishub_username = "your_username"
@@ -33,7 +33,7 @@ print(parsed_msg.content.to_markdown())
 |  0 | 244660616 | 2020-08-17 12:36:27 GMT |     6.17468 |    51.8392 |   360 |     0 |       121 |     0 |         0 |     0 | EDELWEISS | PE6813     |     89 |  86 |   0 |  13 |   0 |       0.2 | SPYCK  | 00-00 00:00 |
 
 ### Example II
-```
+```Python
 import aishub_api
 
 aishub_username = "your_username"
